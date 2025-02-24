@@ -1,0 +1,157 @@
+// <SELECT>
+// Сніппет (HTML): sel
+.select {
+	min-width: 0;
+	position: relative;
+	// .select__body
+	&__body {
+		position: relative;
+
+    font-family: $secondFamily;
+    font-size: 20px;
+    color: $main;
+    line-height: 1.35;
+    @media (max-width: $desktop1){
+      font-size: 18px;
+    }
+    @media (max-width: 1152px){
+      font-size: 16px;
+    }
+	}
+	// .select__title
+	&__title {
+		color: inherit;
+		text-align: left;
+		background-color: inherit;
+		cursor: pointer;
+		width: 100%;
+    transition: color 0.2s;
+    border-radius: 3px;
+    &:hover {
+      color: $accent;
+    }
+    &:active {
+      color: $secondary;
+    }
+	}
+	// .select__value
+	&__value {
+		display: flex;
+		min-width: 0;
+		align-items: center;
+		height: 30px;
+
+    padding: 0px 0px 10px 0px;
+		gap: 10px;
+		> * {
+			flex: 1 1 auto;
+		}
+		&:after {
+      display: none;
+      @extend %pseudo;
+      width: 12px;
+      height: 8px;
+      right: 5px;
+      background: url('../img/icons/spoiler-icon.svg') 0 0 / 100% 100% no-repeat;
+      transition: transform 0.3s;
+			._select-open & {
+				transform: scaleY(-1);
+			}
+		}
+		&._select-pseudo-label {
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+	// .select__content
+	&__content {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		// color: #000;
+		color: $bg;
+		position: absolute;
+		top: calc(100% - 1px);
+		border-radius: 0 0 4px 4px;
+		min-width: 100%;
+		left: 0;
+		background-color: $main;
+		border: 1px solid #d9d9d9;
+		padding: 10px 0px 5px 0px;
+	}
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		max-height: 200px;
+	}
+	// .select__option
+	&__option {
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		padding: 5px 15px;
+    transition: background-color 0.1s, color 0.1s;
+
+		&._select-selected {
+			background-color: #eee;
+		}
+    &:focus {
+      outline: none;
+    }
+    &:focus-visible {
+      background: $accent;
+      color: $bg;
+    }
+		@media (any-hover: hover) {
+			&:hover {
+				background: $accent;
+        color: $bg;
+			}
+		}
+    &:active {
+      background: $secondary;
+    }
+	}
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&--show-top {
+		.select__options {
+			top: auto;
+			bottom: calc(100% - 1px);
+			border: 1px solid #d9d9d9;
+			border-bottom: 0;
+			border-radius: 4px 4px 0 0;
+			padding: 5px 0px 10px 0px;
+		}
+	}
+  &._select-focus {
+    outline: $outline;
+  }
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}

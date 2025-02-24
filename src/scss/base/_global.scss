@@ -1,0 +1,78 @@
+body {
+  font-family: $fontFamily;
+  font-weight: 400;
+  color: $main;
+  background-color: $bg;
+  font-size: 24px;
+  line-height: 1.17;
+  min-width: $minWidth;
+
+  &.body-lock {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @supports (overflow: clip) {
+    overflow: clip
+  }
+
+  > main {
+    flex: 1 1 auto;
+  }
+
+  // фикс для слайдеров
+  // > * {
+  // 	min-width: 0;
+  // }
+}
+
+.container {
+  max-width: calc($containerWidth + ($padding * 2));
+  padding-left: $padding;
+  padding-right: $padding;
+  margin: 0 auto;
+
+  @media (max-width: $desktop3) {
+    max-width: calc($containerWidth + ($paddingMobile * 2));
+    padding-left: $paddingMobile;
+    padding-right: $paddingMobile;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: calc($containerWidth + ($paddingMobileSmall * 2));
+    padding-left: $paddingMobileSmall;
+    padding-right: $paddingMobileSmall;
+  }
+
+  @media (max-height: 640px) {
+    max-width: calc($containerWidth + ($paddingMobile * 2));
+    padding-left: $paddingMobileSmall;
+    padding-right: $paddingMobileSmall;
+  }
+}
+
+.container-right {
+  padding-left: calc((100% - ($containerWidth + ($padding * 2))) / 2 + $padding);
+  @media (max-width: $pc){
+    padding-left: $padding;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

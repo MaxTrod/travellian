@@ -1,0 +1,68 @@
+[
+  {
+    "id": "LisbonOffer",
+    "url": "#",
+    "img": "img/offer/01.jpg",
+    "img2x": "img/offer/01_2x.jpg",
+    "alt": "Lisbon, Portugal",
+    "rating": "5",
+    "title": "Lisbon, Portugal",
+    "text": "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    "price": "€500"
+  },
+  {
+    "id": "LisbonOffer1",
+    "url": "#",
+    "img": "img/offer/01.jpg",
+    "img2x": "img/offer/01_2x.jpg",
+    "alt": "Lisbon, Portugal",
+    "rating": "4",
+    "title": "Lisbon, Portugal",
+    "text": "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    "price": "€500"
+  },
+  {
+    "id": "LisbonOffer2",
+    "url": "#",
+    "img": "img/offer/01.jpg",
+    "img2x": "img/offer/01_2x.jpg",
+    "alt": "Lisbon, Portugal",
+    "rating": "3",
+    "title": "Lisbon, Portugal",
+    "text": "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    "price": "€500"
+  },
+  {
+    "id": "LisbonOffer3",
+    "url": "#",
+    "img": "img/offer/01.jpg",
+    "img2x": "img/offer/01_2x.jpg",
+    "alt": "Lisbon, Portugal",
+    "rating": "5",
+    "title": "Lisbon, Portugal",
+    "text": "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    "price": "€500"
+  },
+  {
+    "id": "LisbonOffer4",
+    "url": "#",
+    "img": "img/offer/01.jpg",
+    "img2x": "img/offer/01_2x.jpg",
+    "alt": "Lisbon, Portugal",
+    "rating": "5",
+    "title": "Lisbon, Portugal",
+    "text": "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    "price": "€500"
+  },
+  {
+    "id": "LisbonOffer5",
+    "url": "#",
+    "img": "img/offer/01.jpg",
+    "img2x": "img/offer/01_2x.jpg",
+    "alt": "Lisbon, Portugal",
+    "rating": "5",
+    "title": "Lisbon, Portugal",
+    "text": "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    "price": "€500"
+  }
+]

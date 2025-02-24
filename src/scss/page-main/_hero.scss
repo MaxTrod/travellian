@@ -1,0 +1,298 @@
+.hero {
+  @media (max-width: $mobile) {
+    padding-top: 198px;
+    padding-bottom: 105px;
+    background-image: url('../img/hero/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+  @media (max-height: 640px) {
+    padding-top: 198px;
+    padding-bottom: 105px;
+    background-image: url('../img/hero/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+  // .hero__slider
+  &__slider {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    @media (max-width: $mobile){
+      height: auto;
+    }
+    @media (max-height: 640px){
+      height: auto;
+    }
+  }
+  // .hero__wrapper
+  &__wrapper {
+    @media (max-width: $mobile) {
+      padding-bottom: 100px;
+    }
+    @media (max-height: 640px) {
+      padding-bottom: 100px;
+    }
+  }
+  // .hero__slide
+  &__slide {
+    box-sizing: border-box;
+    @media (min-width: $mobile) and (min-height: 640px) {
+      box-sizing: border-box;
+      position: relative;
+      background-image: url('../img/hero/bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+    }
+    @media (max-width: $mobile) and (max-width: 640px) {
+      background-image: none;
+      &::before {
+        display: none;
+      }
+    }
+    @media (max-width: $mobile) and (min-width: 640px) {
+      background-image: none;
+      &::before {
+        display: none;
+      }
+    }
+    @media (min-width: $mobile) and (max-width: 640px) {
+      background-image: none;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 3;
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+    ._watcher-view & {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (min-width: $mobile) and (min-height: 880px) {
+      height: calc(100vh - 390px);
+    }
+    @media (min-width: $mobile) and (min-height: 789px) {
+      height: calc(100vh - 270px);
+    }
+    @media (min-width: $mobile) and (min-height: 640px) {
+        height: calc(100vh - 170px);
+    }
+    @media (min-width: $mobile) and (max-height: 640px) {
+      height: auto;
+    }
+    @media (max-width: $mobile) {
+      height: auto;
+    }
+  }
+  // .hero__title
+  &__title {
+    font-family: $secondFamily;
+    font-size: 84px;
+    line-height: 1.33;
+    color: $bg;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    @media (max-width: $desktop2) {
+      font-size: 64px;
+    }
+    @media (max-width: $desktop3){
+      font-size: 54px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 40px;
+    }
+    @media (max-height: 640px) {
+      font-size: 40px;
+    }
+  }
+  // .hero__text
+  &__text {
+    color: $bg;
+    line-height: 1.16;
+    @media (max-width: $desktop3) {
+      font-size: 20px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 18px;
+    }
+    @media (max-height: 640px) {
+      font-size: 18px;
+    }
+  }
+  // .hero__control
+  &__control {
+    position: absolute;
+    z-index: 2;
+    right: 80px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: opacity 0.5s, transform 0.5s;
+
+    opacity: 0;
+    transform: translate(100%, -50%);
+    &._watcher-view {
+      opacity: 1;
+      transform: translate(0, -50%);
+      transition-delay: 0.6s;
+    }
+    
+    @media (max-height: 880px){
+      top: 48%;
+    }
+    @media (max-height: 640px) {
+      display: none;
+    }
+    @media (max-width: $desktop1){
+      right: 32px;
+    }
+    @media (max-width: $desktop3){
+      right: 36px;
+      top: 51%;
+    }
+    @media (max-width: $mobile){
+      display: none;
+    }
+  }
+  // .hero__pagination
+  &__pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .swiper-pagination-bullet {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: $bg;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:focus {
+        outline: none;
+      }
+      &:focus-visible {
+        outline: $outline;
+        outline-offset: $outlineOffset;
+      }
+      @media (any-hover: hover){
+        &:hover{
+          background-color: $accent;
+        }
+      }
+      &:active {
+        background-color: $secondary;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $accent;
+    }
+  }
+  // .hero__navigation
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  // .hero__arrow
+  &__arrow {
+    cursor: pointer;
+    width: 16px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 16px;
+      height: 8px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 3;
+      stroke: $bg;
+      fill: none;
+      transition: stroke 0.3s;
+    }
+    &--prev {
+      transform: rotate(-180deg);
+    }
+    &:focus {
+      outline: none;
+    }
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outlineOffset;
+    }
+    @media (any-hover: hover){
+      &:hover{
+        svg {
+          stroke: $accent;
+        }
+      }
+    }
+    &:active {
+      svg {
+        stroke: $secondary;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+
+%svg-color {
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+%pseudo {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+%pseudo-xy {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

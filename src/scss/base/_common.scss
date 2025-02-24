@@ -1,0 +1,725 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.logo {
+  &__link {
+    display: block;
+    color: $bg;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outlineOffset;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $bg;
+  font-size: 20px;
+  background-color: $accent;
+  border-radius: 12px;
+  padding: 20px 32px;
+  line-height: 1.2;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outlineOffset;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $main;
+    }
+  }
+
+  &:active {
+    background-color: $secondary;
+  }
+}
+
+.link {
+  position: relative;
+
+  &__text {
+    transition: color 0.3s;
+  }
+
+  svg {
+    transition: fill 0.3s;
+  }
+
+  &::after {
+    @extend %pseudo;
+    width: 0;
+    height: 3px;
+    background-color: $accent;
+    bottom: -3px;
+    left: 50%;
+    transition: width 0.3s, left 0.3s, color 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outlineOffset;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  &:active {
+    color: $accent;
+
+    &::after {
+      width: 0;
+      left: 50%;
+    }
+  }
+
+  &--arrow {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: $accent;
+    gap: 22px;
+    transition: color 0.3s;
+
+    svg {
+      width: 35px;
+      height: 17px;
+      fill: $accent;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $main;
+
+        svg {
+          fill: $main;
+        }
+      }
+    }
+
+    &:active {
+      color: $accent;
+
+      svg {
+        fill: $accent;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.book-form {
+  position: absolute;
+  bottom: 270px;
+  z-index: 3;
+  width: auto;
+  background-color: $bg;
+  display: flex;
+  border-radius: 0 20px 20px 0;
+  column-gap: 100px;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+
+  &._watcher-view {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.3s;
+  }
+
+  @media (max-height: 1193.98px) {
+    bottom: 18%;
+  }
+
+  @media (max-height: 880px) {
+    bottom: 17%;
+  }
+
+  @media (max-height: 789px) {
+    bottom: 9%;
+  }
+
+  @media (max-height: $desktop3) {
+    column-gap: 115px;
+  }
+
+  @media (max-width: $mobile) {
+    position: relative;
+    bottom: 8%;
+  }
+
+  @media (max-height: 640px) {
+    position: relative;
+    bottom: 8%;
+  }
+
+  &::before {
+    @extend %pseudo;
+    height: 100%;
+    top: 0;
+    width: 100vw;
+    transform: translateX(-100%);
+    background-color: $bg;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 60px;
+    border-radius: 20px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-height: 640px) {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 60px;
+    border-radius: 20px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__body {
+    padding: 74px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 225.25px);
+    align-items: end;
+    gap: 40px;
+
+    @media (max-width: $desktop1) {
+      grid-template-columns: repeat(4, 195.75px);
+    }
+
+    @media (max-width: $desktop2) {
+      padding: 55.5px 0;
+      grid-template-columns: repeat(4, 158.5px);
+    }
+
+    @media (max-width: $desktop3) {
+      padding: 20px 0;
+      grid-template-columns: repeat(2, 158.5px);
+    }
+
+    @media (max-width: $mobile) {
+      padding: 20px;
+      grid-template-columns: 1fr;
+      gap: 37px;
+    }
+
+    @media (max-height: 640px) {
+      padding: 20px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__elem {
+    border-bottom: 1px solid #000;
+    position: relative;
+    transition: border-color 0.2s;
+
+    &--countries {
+      .choices {
+        transition: color 0.3s;
+
+        &[data-type*="select-one"] {
+          .choices__inner {
+            padding-bottom: 0;
+            margin-bottom: 5px;
+          }
+        }
+
+        &.is-focused {
+          outline: none;
+        }
+        &:focus-visible {
+          outline: $outline;
+        }
+
+        @media (any-hover: hover) {
+          &:hover {
+            color: $accent;
+          }
+        }
+
+        &::after {
+          display: none;
+        }
+
+        &__inner {
+          padding: 0;
+          padding-right: 8px;
+          background-color: transparent;
+          border: none;
+          min-height: auto;
+          font-size: 20px;
+          font-family: $secondFamily;
+
+          @media (max-width: $desktop1) {
+            font-size: 18px;
+          }
+          @media (max-width: $desktop2) {
+            font-size: 16px;
+          }
+        }
+
+        &__input {
+          color: $main;
+        }
+
+        &__list {
+          &--single {
+            padding: 0;
+          }
+
+          &--dropdown {
+            &.is-active {
+              background-color: $main;
+              color: $bg;
+            }
+
+            .choices__item--selectable.is-highlighted,
+            &[aria-expanded] .choices__item--selectable.is-highlighted {
+              background-color: $accent;
+              color: $bg;
+            }
+
+            .choices__item--selectable,
+            &[data-select-text] {
+              padding-right: 0;
+            }
+          }
+        }
+
+        &__item {
+          padding: 0;
+        }
+      }
+
+      .choices__list--dropdown .choices__item--selectable[data-select-text],
+      .choices__list[aria-expanded] .choices__item--selectable[data-select-text] {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  // .book-form__column
+  &__column {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: 70%;
+      background-color: #000;
+      height: 1px;
+      width: 9px;
+      transition: transform 0.2s ease 0s, background-color 0.2s;
+      pointer-events: none;
+    }
+
+    &::before {
+      transform: translate(-75%, -50%) rotate(40deg);
+    }
+
+    &::after {
+      transform: translate(0, -50%) rotate(-40deg);
+    }
+
+    &--quantity {
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    &.is-open {
+      &::before {
+        transform: translateX(-75%) rotate(-40deg);
+      }
+
+      &::after {
+        transform: rotate(40deg);
+      }
+    }
+
+    &._datepicker-open {
+      &::before {
+        transform: translateX(-75%) rotate(-40deg);
+      }
+
+      &::after {
+        transform: rotate(40deg);
+      }
+    }
+
+    &--open {
+      &:after {
+        transform: scaleY(-1);
+      }
+    }
+
+    &--datepicker {
+      .book-form__column--open {
+        pointer-events: none;
+      }
+    }
+
+    &--btn {
+      border-bottom: none;
+    }
+
+    &:hover {
+      border-color: $accent;
+
+      &::before,
+      &::after {
+        background-color: $accent;
+      }
+    }
+
+    &:active {
+      border-color: $secondary;
+
+      &::before,
+      &::after {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  // .book-form__label
+  &__label {
+    line-height: 1.18;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #767e86;
+    margin-bottom: 12px;
+    pointer-events: none;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  &__input {
+    font-family: $secondFamily;
+    font-size: 20px;
+    color: $main;
+    line-height: 1.35;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    height: 27px;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &--quantity {
+      cursor: auto;
+    }
+
+    &--quantity {}
+
+    @media (max-width: $desktop1) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $desktop2) {
+      font-size: 16px;
+    }
+
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  // .book-form__btn
+  &__btn {
+    align-self: stretch;
+    padding: 0 20px 0 20px;
+    border-radius: 0 20px 20px 0;
+    font-family: $secondFamily;
+    font-size: 36px;
+    color: $bg;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    span {
+      max-width: 97px;
+    }
+
+    svg {
+      width: 21px;
+      height: 14px;
+      fill: $bg;
+      transition: stroke 0.3s;
+    }
+
+    &:focus-visible {
+      outline: 2px dashed $main;
+    }
+
+    @media (max-height: 640px) {
+      border-radius: 0 0 20px 20px;
+      padding: 42px 18px;
+      column-gap: 10px;
+      justify-content: space-between;
+
+      span {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      border-radius: 0 0 20px 20px;
+      padding: 42px 18px;
+      column-gap: 10px;
+      justify-content: space-between;
+
+      span {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.book-form__input--quantity::-webkit-outer-spin-button,
+.book-form__input--quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.section {
+  padding: 140px 0;
+
+  @media (max-width: $desktop2) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $desktop3) {
+    padding: 80px 0;
+  }
+}
+
+.header-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 100px;
+
+  &--reverse {
+    @media (min-width:$mobile) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.5s,
+  opacity 0.5s;
+
+  &._watcher-view {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.block-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &--reverse {
+    @media (min-width:$mobile) {
+      align-items: flex-end;
+
+      .block-heading__title {
+        &::after {
+          right: 0;
+        }
+      }
+
+      .block-heading__text {
+        text-align: right;
+      }
+    }
+  }
+
+  // .block-heading__title
+  &__title {
+    margin-bottom: 30px;
+    font-family: $secondFamily;
+    font-size: 64px;
+    line-height: 1.33;
+    padding-bottom: 20px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      @extend %pseudo;
+      height: 3px;
+      background-color: $accent;
+      width: 60.5%;
+      bottom: 0;
+    }
+
+    @media (max-width: $desktop3) {
+      font-size: 54px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 40px;
+    }
+  }
+
+  // .block-heading__text
+  &__text {
+    font-size: 24px;
+    color: $secondary;
+
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: $desktop2) {
+      max-width: 760px;
+    }
+
+    @media (max-width: $desktop3) {
+      max-width: 630px;
+      font-size: 20px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    padding: 20px;
+    margin-left: 40px;
+
+    @media (max-width: $desktop1) {
+      margin-left: 20px;
+    }
+
+    position: relative;
+
+    &::before,
+    &::after {
+      @extend %pseudo;
+      width: 43px;
+      height: 43px;
+      z-index: -1;
+    }
+
+    &::before {
+      background-color: $main;
+      top: -14.5px;
+      left: -14px;
+    }
+
+    &::after {
+      background-color: $secondary;
+      bottom: -14.5px;
+      right: -14px;
+    }
+  }
+}
+
+.slider-control {
+  display: flex;
+  column-gap: 40px;
+
+  @media (max-width: $desktop3) {
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 24px;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &__prev,
+  &__next {
+    cursor: pointer;
+    color: $main;
+
+    svg {
+      width: 20px;
+      height: 10px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 3;
+      stroke: $bg;
+      fill: none;
+      transition: stroke 0.3s;
+    }
+  }
+
+  // .slider-control__prev
+  &__prev {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+
+  // .slider-control__next
+  &__next {
+    svg {
+      transform: rotate(270deg);
+    }
+  }
+}

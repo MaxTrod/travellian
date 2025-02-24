@@ -1,0 +1,31 @@
+<section class="offer section" data-watch="navigator">
+  <div class="container">
+    <div class="offer__inner">
+      <div class="offer__header header-control header-control--reverse" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading block-heading--reverse">
+          <h2 class="block-heading__title">Special Offer</h2>
+          <p class="block-heading__text">Check out our special offer and discounts</p>
+        </div>
+        <div class="slider-control slider-control--offer" data-da=".offer__body, 1151.98">
+          <button class="slider-control__prev slider-control__prev--offer swiper-button-prev btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="slider-control__next slider-control__next--offer swiper-button-next btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="offer__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="offer__slider swiper">
+          <div class="offer__wrapper swiper-wrapper">
+            @@loop('./_offer-slide.html', 'files/offer.json')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

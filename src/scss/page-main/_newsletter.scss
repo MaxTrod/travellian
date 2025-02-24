@@ -1,0 +1,112 @@
+.newsletter {
+  // .newsletter__content
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 26px;
+    background-color: $bg;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 60px 80px;
+    margin-bottom: -130px;
+    position: relative;
+    z-index: 2;
+    gap: 30px;
+    @media (max-width: $desktop2){
+      padding: 40px 60px;
+      margin-bottom: -105px;
+    }
+    @media (max-width: $desktop2) {
+      margin-bottom: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 60px;
+      padding: 40px;
+    }
+    @media (max-width:$mobile) {
+      padding: 40px 20px;
+    }
+  }
+
+  &__title,
+  &__form {
+    opacity: 0;
+		transform: translateY(50px);
+		transition:
+			opacity 0.5s,
+			transform 0.5s;
+
+		._watcher-view & {
+			opacity: 1;
+			transform: translateY(0);
+		}
+  }
+  // .newsletter__title
+  &__title {
+    font-family: $secondFamily;
+    color: $secondary;
+    font-size: 64px;
+    @media (max-width: $desktop2) {
+      font-size: 54px;
+    }
+    @media (max-width:$mobile) {
+      font-size: 40px;
+    }
+  }
+  // .newsletter__label
+  &__label {
+    display: block;
+    color: $secondary;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  // .newsletter__row
+  &__row {
+    display: flex;
+    gap: 32px;
+    @media (max-width:$mobile){
+       flex-direction: column;
+    }
+  }
+  // .newsletter__input
+  &__input {
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 24px 15px 24px 40px;
+    width: 372px;
+    background-color: rgba($accent, 0.3);
+    transition: outline 0.3s, background-color 0.3s;
+    &::placeholder {
+      color: $accent;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba($accent, 0.3);
+      background-color: $bg;
+    }
+
+    @media (any-hover: hover){
+      &:hover{
+        background-color: $bg;
+      }
+    }
+
+    @media (max-width: $desktop2) {
+      width: 100%;
+    }
+
+  }
+  // .newsletter__button
+  &__button {
+    padding: 24px 35px;
+    color: $main;
+    span {
+      color: $bg;
+    }
+  }
+}

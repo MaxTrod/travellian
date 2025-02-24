@@ -1,0 +1,200 @@
+.slide-trip {
+  @media (min-width: $desktop3) {
+    @media (any-hover: hover) {
+      &:hover {
+        .slide-trip__img-box {
+          top: -20%;
+
+          &::before {
+            background-color: transparent;
+          }
+        }
+
+        .slide-trip__content {
+          transform: translateY(40%);
+          opacity: 1;
+
+          @media (max-width: $desktop2) {
+            transform: translateY(50%);
+          }
+        }
+      }
+    }
+  }
+
+  // .slide-trip__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 300px;
+    height: 399px;
+
+    @media (max-width: $desktop2) {
+      width: 250px;
+      height: 350px;
+    }
+
+    @media (max-width: $desktop3) {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__img-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+    border-radius: 26px;
+    overflow: hidden;
+
+    &::before {
+      @extend %pseudo;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    @media (max-width: $desktop3) {
+      position: relative;
+      display: block;
+      height: 350px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width:$mobile) {
+      height: 320px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outlineOffset;
+      top: -20%;
+
+      &::before {
+        background-color: transparent;
+      }
+    }
+
+    &:focus-visible+.slide-trip__content {
+      transform: translateY(40%);
+      opacity: 1;
+
+      @media (max-width: $desktop2) {
+        transform: translateY(50%);
+      }
+    }
+
+    .open-content & {
+      top: -20%;
+
+      &::before {
+        background-color: transparent;
+      }
+    }
+  }
+
+  // .slide-trip__image
+  &__image {
+    width: 100%;
+  }
+
+  // .slide-trip__content
+  &__content {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, auto);
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 1.17;
+
+    transform: translateY(0);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+
+    @media (max-width: $desktop3) {
+      opacity: 1;
+      font-size: 24px;
+    }
+
+    @media (max-width:$mobile) {
+      font-size: 18px;
+    }
+
+    .open-content & {
+      transform: translateY(40%);
+      opacity: 1;
+
+      @media (max-width: $desktop2) {
+        transform: translateY(50%);
+      }
+    }
+  }
+
+  // .slide-trip__tour
+  &__tour {
+
+    text-transform: uppercase;
+  }
+
+  // .slide-trip__price
+  &__price {
+    text-align: right;
+  }
+
+  // .slide-trip__title-link
+  &__title-link {
+    grid-column: span 2;
+    transition: color 0.3s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outlineOffset;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    &:active {
+      color: $main;
+    }
+  }
+
+  // .slide-trip__title
+  &__title {
+    font-weight: 600;
+    font-family: $secondFamily;
+    line-height: 1.32;
+    font-size: 28px;
+
+    @media (max-width: $desktop3) {
+      font-size: 32px;
+    }
+
+    @media (max-width:$mobile) {
+      font-size: 28px;
+    }
+  }
+}

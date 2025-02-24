@@ -1,0 +1,115 @@
+.trip {
+  padding: 210px 0;
+
+  @media (max-width: $desktop2) {
+    padding: 173px 0;
+  }
+
+  @media (max-width: $desktop3) {
+    padding: 100px 0;
+  }
+
+  .container-right {
+    @media (max-width: $desktop3) {
+      max-width: calc($containerWidth + ($paddingMobile * 2));
+      padding-left: $paddingMobile;
+      padding-right: $paddingMobile;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: calc($containerWidth + ($paddingMobile * 2));
+      padding-left: $paddingMobileSmall;
+      padding-right: $paddingMobileSmall;
+    }
+  }
+
+  // .trip__inner
+  &__inner {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+
+    .block-heading {
+      flex: 0 0 394px;
+      position: relative;
+      z-index: 3;
+      padding-top: 95px;
+
+      @media (max-width: $desktop1) {
+        padding-top: 0;
+      }
+
+      @media (max-width: $desktop3) {
+        max-width: 332px;
+
+        &:not(:last-child) {
+          margin-bottom: 96px;
+        }
+      }
+    }
+
+    .block-heading__text {
+      font-size: 18px;
+    }
+
+    .block-heading__link {
+      font-size: 18px;
+    }
+
+    @media (max-width: $desktop1) {
+      column-gap: 80px;
+    }
+
+    @media (max-width: $desktop3) {
+      display: block;
+    }
+  }
+
+  // .trip__body
+  &__body {
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      @extend %pseudo;
+      top: 0;
+      right: 100%;
+      width: 100vh;
+      height: 100%;
+      background-color: $bg;
+      z-index: 3;
+    }
+  }
+
+  // .trip__slider
+  &__slider {
+    overflow: visible;
+  }
+
+  // .trip__wrapper
+  &__wrapper {
+    @media (max-width: $desktop3) {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+
+  &__slide {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    ._watcher-view & {
+      transform: translateY(0);
+      opacity: 1;
+      @for $i from 1 through 4 {
+				&:nth-child(#{$i}) {
+					$startDelay: 0;
+					$delay: $i * 0.15 + $startDelay;
+					transition-delay: #{$delay}s;
+				}
+			}
+    }
+  }
+}

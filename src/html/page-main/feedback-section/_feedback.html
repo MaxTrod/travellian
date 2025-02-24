@@ -1,0 +1,35 @@
+<section class="feedback section">
+  <div class="container">
+    <div class="feedback__inner">
+      <div class="feedback__header" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading">
+          <h2 class="block-heading__title">Traveler’s Experiences</h2>
+          <p class="block-heading__text">Here some awesome feedback from our travelers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feedback__body" data-watch data-watch-once data-watch-threshold="0.3">
+    <div class="container-right">
+      <div class="feedback__slider swiper">
+        <div class="feedback__wrapper swiper-wrapper">
+          @@loop('./_feedback-slide.html', 'files/feedback.json')
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slider-control slider-control--feed">
+        <button class="slider-control__prev slider-control__prev--feed swiper-button-prev btn">
+          <svg>
+            <use xlink:href="img/icons.svg#arrow-icon"></use>
+          </svg>
+        </button>
+        <button class="slider-control__next slider-control__next--feed swiper-button-next btn">
+          <svg>
+            <use xlink:href="img/icons.svg#arrow-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

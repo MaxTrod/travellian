@@ -1,0 +1,46 @@
+[
+  {
+    "id": "RomeTrip",
+    "img": "img/trip/01.jpg",
+    "img2x": "img/trip/01_2x.jpg",
+    "alt": "Rome",
+    "price": "€99",
+    "url": "#",
+    "title": "Rome City Tour",
+    "rating": "5",
+    "days": "7"
+  },
+  {
+    "id": "ParisTrip",
+    "img": "img/trip/02.jpg",
+    "img2x": "img/trip/02_2x.jpg",
+    "alt": "Rome",
+    "price": "€99",
+    "url": "#",
+    "title": "Rome City Tour",
+    "rating": "5",
+    "days": "7"
+  },
+  {
+    "id": "LondonTrip",
+    "img": "img/trip/03.jpg",
+    "img2x": "img/trip/03_2x.jpg",
+    "alt": "Rome",
+    "price": "€99",
+    "url": "#",
+    "title": "Rome City Tour",
+    "rating": "5",
+    "days": "7"
+  },
+  {
+    "id": "BerlinTrip",
+    "img": "img/trip/04.jpg",
+    "img2x": "img/trip/04_2x.jpg",
+    "alt": "Rome",
+    "price": "€99",
+    "url": "#",
+    "title": "Rome City Tour",
+    "rating": "5",
+    "days": "7"
+  }
+]

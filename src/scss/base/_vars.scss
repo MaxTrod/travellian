@@ -1,0 +1,36 @@
+//vars
+$containerWidth: 1556px;
+$padding: 32px;
+$paddingMobile: 20px;
+$paddingMobileSmall: 16px;
+$minWidth: 320px;
+
+$fontFamily: "Rubik", sans-serif;
+$secondFamily: "Playfair Display", sans-serif;
+$thirdFamily: "Mulish", sans-serif;
+
+//colors
+$main: #172432;
+$secondary: #767e86;
+$accent: #FF7757;
+$bg: #fff;
+
+//focus-visible state
+$outline: 2px dashed currentColor;
+$outlineOffset: 3px;
+
+//breakpoints base
+// $pc: $containerWidth; 
+$pc: calc($containerWidth + ($padding * 2)); 
+$tablet: 991.98px; 
+$mobile: 767.98px; 
+$mobileSmall: 479.98px; 
+
+//layout breakpoints
+$desktop1: 1440px;
+$desktop2: 1380px;
+$desktop3: 1151.98px;
+
+
+
+

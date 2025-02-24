@@ -1,0 +1,19 @@
+<section class="trip section" data-watch="navigator">
+  <div class="container-right">
+    <div class="trip__inner">
+      <div class="block-heading">
+        <h2 class="block-heading__title">Trip Planners</h2>
+        <p class="block-heading__text">20 years from now you will be more disappointed by the things that you didn’t do.
+          Stop regretting and start travelling, start throwing off the bowlines.</p>
+        <a class="block-heading__link btn" href="#">View all trip plans</a>
+      </div>
+      <div class="trip__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="trip__slider swiper">
+          <div class="trip__wrapper swiper-wrapper">
+            @@loop('./_trip-slide.html', 'files/trip.json')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

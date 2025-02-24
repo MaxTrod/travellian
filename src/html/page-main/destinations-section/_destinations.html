@@ -1,0 +1,34 @@
+<section class="destinations section" data-watch="navigator">
+  <div class="destinations__inner">
+    <div class="container">
+      <div class="destinations__header header-control" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading">
+          <h2 class="block-heading__title">Popular Destinations</h2>
+          <p class="block-heading__text">Most popular destinations around the world, from historical places to natural
+            wonders.</p>
+        </div>
+        <div class="slider-control slider-control--dest" data-da=".destinations__body, 1151.98">
+          <button class="slider-control__prev slider-control__prev--dest swiper-button-prev btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="slider-control__next slider-control__next--dest swiper-button-next btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-right">
+      <div class="destinations__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="destinations__slider swiper">
+          <div class="destinations__wrapper swiper-wrapper">
+            @@loop('./_destinations-slide.html', 'files/destination.json')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

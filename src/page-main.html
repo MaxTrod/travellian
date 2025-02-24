@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/components/_head.html', {
+"title" : "page main"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/components/_header.html', {})
+
+    <main class="page">
+      @@include('html/page-main/_hero.html', {})
+      @@include('html/page-main/destinations-section/_destinations.html', {})
+      @@include('html/page-main/offer-section/_offer.html', {})
+      @@include('html/page-main/_blog.html', {})
+      @@include('html/page-main/trip-section/_trip.html', {})
+      @@include('html/page-main/_gallery.html', {})
+      @@include('html/page-main/feedback-section/_feedback.html', {})
+      @@include('html/page-main/_newsletter.html', {})
+    </main>
+
+    @@include('html/components/_footer.html', {})
+  </div>
+</body>
+
+</html>
