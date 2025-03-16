@@ -3,68 +3,871 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>travellian project</title>
-
+  <title>page main</title>
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
-
-
-  <link rel="stylesheet" href="css/style.min.css">
-  <script defer src="js/app.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap&_v=20250316193621" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap&_v=20250316193621" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap&_v=20250316193621" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20250316193621">
+  <script defer src="js/app.min.js?_v=20250316193621"></script>
 </head>
 
 <body>
-  <div class="preview">
-    <div class="preview__title">
-       "travellian" landing layout by <a href="#">MaxTrod</a>
+  <div class="wrapper">
+    <header class="header" data-scroll-show data-watch>
+  <div class="container header__container">
+    <div class="header__inner">
+      <div class="logo header__logo">
+        <a class="logo__link" href="#">
+          <img src="img/logo.svg" width="234" height="46" alt="Travellian logo">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--home link" href="#" data-goto=".hero">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#" data-goto=".destinations">Explore</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#" data-goto=".offer">Travel</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#" data-goto=".blog">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#" data-goto=".trip">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions" data-da=".menu, 1151.98">
+        <button class="header__btn header__btn--login link" type="button">Login</button>
+        <button class="header__btn header__btn--signup btn" type="button">Sign up</button>
+      </div>
+      <button class="icon-menu" aria-label="burger menu"><span></span></button>
     </div>
-    <div class="preview__description">
-      Your pages:
-   </div>
-    <ol class="preview__list">
-      <li class="preview__item">
-        <a class="preview__link" href="page-main.html" target="_blank">main page</a>
-      </li>
-    </ol>
   </div>
+</header>
 
-  <style>
-    .preview {
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      text-align: center;
-      font-size: 30px;
-      padding: 20px;
-      background-color: #2e333d;
-      min-height: 100vh;
-      color: #fff;
-    }
-    .preview ol {
-      list-style: upper-roman;
-    }
-    .preview__title {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    .preview__description {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-    .preview__list {
-      font-size: 25px;
-    }
-    .preview__title a {
-      text-decoration: underline;
-      color: #b2dab5;
-      transition: all 0.1s;
-    }
-  </style>
+    <main class="page">
+      <section class="hero" data-watch="navigator">
+  <h1 class="visually-hidden">Travellian main book screen</h1>
+  <div class="hero__slider swiper">
+    <div class="hero__wrapper swiper-wrapper" data-watch data-watch-once>
+      <div class="hero__slide swiper-slide">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="hero__title">Start your unforgettable journey with us.</h2>
+              <p class="hero__text">The best travel for your jouney begins now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide swiper-slide">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="hero__title">Start your unforgettable journey with us.</h2>
+              <p class="hero__text">The best travel for your jouney begins now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide swiper-slide">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="hero__title">Start your unforgettable journey with us.</h2>
+              <p class="hero__text">The best travel for your jouney begins now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide swiper-slide">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="hero__title">Start your unforgettable journey with us.</h2>
+              <p class="hero__text">The best travel for your jouney begins now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide swiper-slide">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="hero__title">Start your unforgettable journey with us.</h2>
+              <p class="hero__text">The best travel for your jouney begins now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__control" data-watch data-watch-once>
+      <div class="hero__pagination swiper-pagination"></div>
+      <div class="hero__navigation">
+        <div class="hero__arrow hero__arrow--prev swiper-button-prev">
+          <svg>
+            <use xlink:href="img/icons.svg#arrow-icon"></use>
+          </svg>
+        </div>
+        <div class="hero__arrow hero__arrow--next swiper-button-next">
+          <svg>
+            <use xlink:href="img/icons.svg#arrow-icon"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="container hero__container">
+      <form class="book-form" action="#" data-watch data-watch-once>
+        <div class="book-form__body">
+          <div class="book-form__elem book-form__elem--countries">
+            <label class="book-form__label" for="choices-single-remote-fetch">Destination</label>
+            <div class="book-form__column">
+              <select class="form-control" name="choices-single-remote-fetch" id="choices-single-remote-fetch">
+              </select>
+            </div>
+          </div>
+          <div class="book-form__elem">
+            <label class="book-form__label" for="ppl">Person</label>
+            <div class="book-form__column book-form__column--quantity">
+              <input class="book-form__input book-form__input--quantity" min="1" max="20" value="1" id="ppl"
+                type="number" name="people-quantity">
+            </div>
+          </div>
+          <div class="book-form__elem">
+            <label class="book-form__label" for="checkin">Check in</label>
+            <div class="book-form__column book-form__column--datepicker">
+              <input class="book-form__input" data-datepicker id="checkin" type="text" name="checkinDate">
+            </div>
+          </div>
+          <div class="book-form__elem">
+            <label class="book-form__label" for="checkout">Check out</label>
+            <div class="book-form__column book-form__column--datepicker">
+              <input class="book-form__input" data-datepicker id="checkout" type="text" name="checkoutDate">
+            </div>
+          </div>
+        </div>
+        <button class="book-form__btn btn">
+          <span>Book Now</span>
+          <svg>
+            <use xlink:href="img/icons.svg#arrowbook-icon"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+      <section class="destinations section" data-watch="navigator">
+  <div class="destinations__inner">
+    <div class="container">
+      <div class="destinations__header header-control" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading">
+          <h2 class="block-heading__title">Popular Destinations</h2>
+          <p class="block-heading__text">Most popular destinations around the world, from historical places to natural
+            wonders.</p>
+        </div>
+        <div class="slider-control slider-control--dest" data-da=".destinations__body, 1151.98">
+          <button class="slider-control__prev slider-control__prev--dest swiper-button-prev btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="slider-control__next slider-control__next--dest swiper-button-next btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-right">
+      <div class="destinations__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="destinations__slider swiper">
+          <div class="destinations__wrapper swiper-wrapper">
+            <div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="BerlinDest">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/01.webp, img/destinations/01_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/01.jpg" srcset="img/destinations/01_2x.jpg 2x" width="497" height="661" loading="lazy" alt="Monument of Berlin"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Monument of Berlin</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          Berlin, Germany
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="LondonDest">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/02.webp, img/destinations/02_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/02.jpg" srcset="img/destinations/02_2x.jpg 2x" width="497" height="661" loading="lazy" alt="@@alt"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Millennium Bridge</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          London, United Kingdom
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="VeniceDest">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/03.webp, img/destinations/03_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/03.jpg" srcset="img/destinations/03_2x.jpg 2x" width="497" height="661" loading="lazy" alt="@@alt"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Rialto Bridge</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          Venice, Italy
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="LisbonDest">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/04.webp, img/destinations/04_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/04.jpg" srcset="img/destinations/04_2x.jpg 2x" width="497" height="661" loading="lazy" alt="@@alt"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Sea of Orange Tiles</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          Lisbon, Portugal
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="BerlinDest1">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/01.webp, img/destinations/01_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/01.jpg" srcset="img/destinations/01_2x.jpg 2x" width="497" height="661" loading="lazy" alt="Monument of Berlin"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Monument of Berlin</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          Berlin, Germany
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="LondonDest1">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/02.webp, img/destinations/02_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/02.jpg" srcset="img/destinations/02_2x.jpg 2x" width="497" height="661" loading="lazy" alt="@@alt"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Millennium Bridge</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          London, United Kingdom
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="VeniceDest1">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/03.webp, img/destinations/03_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/03.jpg" srcset="img/destinations/03_2x.jpg 2x" width="497" height="661" loading="lazy" alt="@@alt"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Rialto Bridge</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          Venice, Italy
+        </div>
+      </div>
+    </a>
+  </article>
+</div><div class="destinations__slide slide-dest swiper-slide">
+  <article class="slide-dest__article" id="LisbonDest1">
+    <a class="slide-dest__link" href="#">
+      <picture><source srcset="img/destinations/04.webp, img/destinations/04_2x.webp 2x" type="image/webp"><img class="slide-dest__img" src="img/destinations/04.jpg" srcset="img/destinations/04_2x.jpg 2x" width="497" height="661" loading="lazy" alt="@@alt"></picture>
+      <div class="slide-dest__info">
+        <h3 class="slide-dest__title">Sea of Orange Tiles</h3>
+        <div class="slide-dest__location">
+          <svg>
+            <use xlink:href="img/icons.svg#location-icon"></use>
+          </svg>
+          Lisbon, Portugal
+        </div>
+      </div>
+    </a>
+  </article>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="offer section" data-watch="navigator">
+  <div class="container">
+    <div class="offer__inner">
+      <div class="offer__header header-control header-control--reverse" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading block-heading--reverse">
+          <h2 class="block-heading__title">Special Offer</h2>
+          <p class="block-heading__text">Check out our special offer and discounts</p>
+        </div>
+        <div class="slider-control slider-control--offer" data-da=".offer__body, 1151.98">
+          <button class="slider-control__prev slider-control__prev--offer swiper-button-prev btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="slider-control__next slider-control__next--offer swiper-button-next btn" type="button">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="offer__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="offer__slider swiper">
+          <div class="offer__wrapper swiper-wrapper">
+            <div class="offer__slide slide-offer swiper-slide">
+  <article class="slide-offer__card" id="LisbonOffer">
+    <a class="slide-offer__image-link" href="#">
+      <picture><source srcset="img/offer/01.webp, img/offer/01_2x.webp 2x" type="image/webp"><img class="slide-offer__image" src="img/offer/01.jpg" srcset="img/offer/01_2x.jpg 2x" width="497" height="286" loading="lazy" alt="Lisbon, Portugal"></picture>
+    </a>
+    <div class="slide-offer__content">
+      <a class="slide-offer__title-link" href="#">
+        <h3 class="slide-offer__title">Lisbon, Portugal</h3>
+      </a>
+      <div class="slide-offer__rating rating" data-rating="" data-rating-value="5"></div>
+      <p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+      <div class="slide-offer__info">
+        <div class="slide-offer__price">From<span>€500</span></div>
+        <a class="slide-offer__btn btn" href="#">Details</a>
+      </div>
+    </div>
+  </article>
+</div><div class="offer__slide slide-offer swiper-slide">
+  <article class="slide-offer__card" id="LisbonOffer1">
+    <a class="slide-offer__image-link" href="#">
+      <picture><source srcset="img/offer/01.webp, img/offer/01_2x.webp 2x" type="image/webp"><img class="slide-offer__image" src="img/offer/01.jpg" srcset="img/offer/01_2x.jpg 2x" width="497" height="286" loading="lazy" alt="Lisbon, Portugal"></picture>
+    </a>
+    <div class="slide-offer__content">
+      <a class="slide-offer__title-link" href="#">
+        <h3 class="slide-offer__title">Lisbon, Portugal</h3>
+      </a>
+      <div class="slide-offer__rating rating" data-rating="" data-rating-value="4"></div>
+      <p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+      <div class="slide-offer__info">
+        <div class="slide-offer__price">From<span>€500</span></div>
+        <a class="slide-offer__btn btn" href="#">Details</a>
+      </div>
+    </div>
+  </article>
+</div><div class="offer__slide slide-offer swiper-slide">
+  <article class="slide-offer__card" id="LisbonOffer2">
+    <a class="slide-offer__image-link" href="#">
+      <picture><source srcset="img/offer/01.webp, img/offer/01_2x.webp 2x" type="image/webp"><img class="slide-offer__image" src="img/offer/01.jpg" srcset="img/offer/01_2x.jpg 2x" width="497" height="286" loading="lazy" alt="Lisbon, Portugal"></picture>
+    </a>
+    <div class="slide-offer__content">
+      <a class="slide-offer__title-link" href="#">
+        <h3 class="slide-offer__title">Lisbon, Portugal</h3>
+      </a>
+      <div class="slide-offer__rating rating" data-rating="" data-rating-value="3"></div>
+      <p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+      <div class="slide-offer__info">
+        <div class="slide-offer__price">From<span>€500</span></div>
+        <a class="slide-offer__btn btn" href="#">Details</a>
+      </div>
+    </div>
+  </article>
+</div><div class="offer__slide slide-offer swiper-slide">
+  <article class="slide-offer__card" id="LisbonOffer3">
+    <a class="slide-offer__image-link" href="#">
+      <picture><source srcset="img/offer/01.webp, img/offer/01_2x.webp 2x" type="image/webp"><img class="slide-offer__image" src="img/offer/01.jpg" srcset="img/offer/01_2x.jpg 2x" width="497" height="286" loading="lazy" alt="Lisbon, Portugal"></picture>
+    </a>
+    <div class="slide-offer__content">
+      <a class="slide-offer__title-link" href="#">
+        <h3 class="slide-offer__title">Lisbon, Portugal</h3>
+      </a>
+      <div class="slide-offer__rating rating" data-rating="" data-rating-value="5"></div>
+      <p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+      <div class="slide-offer__info">
+        <div class="slide-offer__price">From<span>€500</span></div>
+        <a class="slide-offer__btn btn" href="#">Details</a>
+      </div>
+    </div>
+  </article>
+</div><div class="offer__slide slide-offer swiper-slide">
+  <article class="slide-offer__card" id="LisbonOffer4">
+    <a class="slide-offer__image-link" href="#">
+      <picture><source srcset="img/offer/01.webp, img/offer/01_2x.webp 2x" type="image/webp"><img class="slide-offer__image" src="img/offer/01.jpg" srcset="img/offer/01_2x.jpg 2x" width="497" height="286" loading="lazy" alt="Lisbon, Portugal"></picture>
+    </a>
+    <div class="slide-offer__content">
+      <a class="slide-offer__title-link" href="#">
+        <h3 class="slide-offer__title">Lisbon, Portugal</h3>
+      </a>
+      <div class="slide-offer__rating rating" data-rating="" data-rating-value="5"></div>
+      <p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+      <div class="slide-offer__info">
+        <div class="slide-offer__price">From<span>€500</span></div>
+        <a class="slide-offer__btn btn" href="#">Details</a>
+      </div>
+    </div>
+  </article>
+</div><div class="offer__slide slide-offer swiper-slide">
+  <article class="slide-offer__card" id="LisbonOffer5">
+    <a class="slide-offer__image-link" href="#">
+      <picture><source srcset="img/offer/01.webp, img/offer/01_2x.webp 2x" type="image/webp"><img class="slide-offer__image" src="img/offer/01.jpg" srcset="img/offer/01_2x.jpg 2x" width="497" height="286" loading="lazy" alt="Lisbon, Portugal"></picture>
+    </a>
+    <div class="slide-offer__content">
+      <a class="slide-offer__title-link" href="#">
+        <h3 class="slide-offer__title">Lisbon, Portugal</h3>
+      </a>
+      <div class="slide-offer__rating rating" data-rating="" data-rating-value="5"></div>
+      <p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+      <div class="slide-offer__info">
+        <div class="slide-offer__price">From<span>€500</span></div>
+        <a class="slide-offer__btn btn" href="#">Details</a>
+      </div>
+    </div>
+  </article>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="blog section" data-watch="navigator">
+  <div class="container">
+    <div class="blog__inner">
+      <div class="blog__header" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading">
+          <h2 class="block-heading__title">Our Blog</h2>
+          <p class="block-heading__text">An insight the incredible experience in the world</p>
+        </div>
+      </div>
+      <div class="blog__body">
+        <div class="blog__img-block">
+          <picture><source srcset="img/blog/01.webp, img/blog/01_2x.webp 2x" type="image/webp"><img class="blog__img" src="img/blog/01.jpg" srcset="img/blog/01_2x.jpg 2x" width="762" height="873" loading="lazy" alt="Cinque Terre"></picture>
+        </div>
+        <div class="blog__content" data-watch data-watch-once data-watch-threshold="0.3">
+          <h3 class="blog__title">Beautiful Italy Let’s travel</h3>
+          <p class="blog__text">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or pursues.
+          </p>
+          <a class="blog__link link link--arrow" href="#">
+            <div class="link__text">Read More</div>
+            <svg>
+              <use xlink:href="img/icons.svg#arrowbook-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="trip section" data-watch="navigator">
+  <div class="container-right">
+    <div class="trip__inner">
+      <div class="block-heading">
+        <h2 class="block-heading__title">Trip Planners</h2>
+        <p class="block-heading__text">20 years from now you will be more disappointed by the things that you didn’t do.
+          Stop regretting and start travelling, start throwing off the bowlines.</p>
+        <a class="block-heading__link btn" href="#">View all trip plans</a>
+      </div>
+      <div class="trip__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="trip__slider swiper">
+          <div class="trip__wrapper swiper-wrapper">
+            <div class="trip__slide slide-trip swiper-slide">
+  <article class="slide-trip__card" id="RomeTrip">
+    <a href="#" class="slide-trip__img-box">
+      <picture><source srcset="img/trip/01.webp, img/trip/01_2x.webp 2x" type="image/webp"><img class="slide-trip__image" src="img/trip/01.jpg" srcset="img/trip/01_2x.jpg 2x" width="300" height="399" loading="lazy" alt="Rome"></picture>
+    </a>
+    <div class="slide-trip__content">
+      <span class="slide-trip__tour">Guided Tour</span>
+      <span class="slide-trip__price"><span>€99</span>/Day</span>
+      <a class="slide-trip__title-link" href="#">
+        <h3 class="slide-trip__title">Rome City Tour</h3>
+      </a>
+      <div class="slide-trip__rating rating" data-rating="" data-rating-value="5"></div>
+      <span class="slide-trip__days">
+        <span>7</span> Days tour
+      </span>
+    </div>
+  </article>
+</div><div class="trip__slide slide-trip swiper-slide">
+  <article class="slide-trip__card" id="ParisTrip">
+    <a href="#" class="slide-trip__img-box">
+      <picture><source srcset="img/trip/02.webp, img/trip/02_2x.webp 2x" type="image/webp"><img class="slide-trip__image" src="img/trip/02.jpg" srcset="img/trip/02_2x.jpg 2x" width="300" height="399" loading="lazy" alt="Rome"></picture>
+    </a>
+    <div class="slide-trip__content">
+      <span class="slide-trip__tour">Guided Tour</span>
+      <span class="slide-trip__price"><span>€99</span>/Day</span>
+      <a class="slide-trip__title-link" href="#">
+        <h3 class="slide-trip__title">Rome City Tour</h3>
+      </a>
+      <div class="slide-trip__rating rating" data-rating="" data-rating-value="5"></div>
+      <span class="slide-trip__days">
+        <span>7</span> Days tour
+      </span>
+    </div>
+  </article>
+</div><div class="trip__slide slide-trip swiper-slide">
+  <article class="slide-trip__card" id="LondonTrip">
+    <a href="#" class="slide-trip__img-box">
+      <picture><source srcset="img/trip/03.webp, img/trip/03_2x.webp 2x" type="image/webp"><img class="slide-trip__image" src="img/trip/03.jpg" srcset="img/trip/03_2x.jpg 2x" width="300" height="399" loading="lazy" alt="Rome"></picture>
+    </a>
+    <div class="slide-trip__content">
+      <span class="slide-trip__tour">Guided Tour</span>
+      <span class="slide-trip__price"><span>€99</span>/Day</span>
+      <a class="slide-trip__title-link" href="#">
+        <h3 class="slide-trip__title">Rome City Tour</h3>
+      </a>
+      <div class="slide-trip__rating rating" data-rating="" data-rating-value="5"></div>
+      <span class="slide-trip__days">
+        <span>7</span> Days tour
+      </span>
+    </div>
+  </article>
+</div><div class="trip__slide slide-trip swiper-slide">
+  <article class="slide-trip__card" id="BerlinTrip">
+    <a href="#" class="slide-trip__img-box">
+      <picture><source srcset="img/trip/04.webp, img/trip/04_2x.webp 2x" type="image/webp"><img class="slide-trip__image" src="img/trip/04.jpg" srcset="img/trip/04_2x.jpg 2x" width="300" height="399" loading="lazy" alt="Rome"></picture>
+    </a>
+    <div class="slide-trip__content">
+      <span class="slide-trip__tour">Guided Tour</span>
+      <span class="slide-trip__price"><span>€99</span>/Day</span>
+      <a class="slide-trip__title-link" href="#">
+        <h3 class="slide-trip__title">Rome City Tour</h3>
+      </a>
+      <div class="slide-trip__rating rating" data-rating="" data-rating-value="5"></div>
+      <span class="slide-trip__days">
+        <span>7</span> Days tour
+      </span>
+    </div>
+  </article>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="gallery section">
+  <div class="container">
+    <div class="gallery__inner">
+      <div class="gallery__header header-control" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading">
+          <h2 class="block-heading__title">Destination Gallery</h2>
+          <p class="block-heading__text">Our photo gallery on trip</p>
+        </div>
+        <div class="slider-control slider-control--gallery" data-da=".gallery__body, 1151.98">
+          <button class="slider-control__prev slider-control__prev--gallery swiper-button-prev btn">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="slider-control__next slider-control__next--gallery swiper-button-next btn">
+            <svg>
+              <use xlink:href="img/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="gallery__body" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="gallery__slider swiper">
+          <div class="gallery__wrapper swiper-wrapper popup-gallery">
+            <div class="gallery__slide swiper-slide">
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/1_3x.jpg">
+                <picture><source srcset="img/gallery/1.webp, img/gallery/1_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/1.jpg" srcset="img/gallery/1_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/2_3x.jpg">
+                <picture><source srcset="img/gallery/2.webp, img/gallery/2_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/2.jpg" srcset="img/gallery/2_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/3_3x.jpg">
+                <picture><source srcset="img/gallery/3.webp, img/gallery/3_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/3.jpg" srcset="img/gallery/3_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/4_3x.jpg">
+                <picture><source srcset="img/gallery/4.webp, img/gallery/4_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/4.jpg" srcset="img/gallery/4_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/1_3x.jpg">
+                <picture><source srcset="img/gallery/1.webp, img/gallery/1_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/1.jpg" srcset="img/gallery/1_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/2_3x.jpg">
+                <picture><source srcset="img/gallery/2.webp, img/gallery/2_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/2.jpg" srcset="img/gallery/2_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/3_3x.jpg">
+                <picture><source srcset="img/gallery/3.webp, img/gallery/3_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/3.jpg" srcset="img/gallery/3_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+              <a data-pswp-width="" data-pswp-height="" class="popup-gallery__item" href="img/gallery/4_3x.jpg">
+                <picture><source srcset="img/gallery/4.webp, img/gallery/4_2x.webp 2x" type="image/webp"><img class="popup-gallery__image" width="365" height="570" src="img/gallery/4.jpg" srcset="img/gallery/4_2x.jpg 2x" loading="lazy" alt="men"></picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="feedback section">
+  <div class="container">
+    <div class="feedback__inner">
+      <div class="feedback__header" data-watch data-watch-once data-watch-threshold="0.3">
+        <div class="block-heading">
+          <h2 class="block-heading__title">Traveler’s Experiences</h2>
+          <p class="block-heading__text">Here some awesome feedback from our travelers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feedback__body" data-watch data-watch-once data-watch-threshold="0.3">
+    <div class="container-right">
+      <div class="feedback__slider swiper">
+        <div class="feedback__wrapper swiper-wrapper">
+          <div class="feedback__slide swiper-slide">
+  <article class="feedback__card card-feedback">
+    <h2 class="visually-hidden">author feedback</h2>
+    <picture><source srcset="img/feedback/01.webp" type="image/webp"><img class="card-feedback__image" width="100" height="100" src="img/feedback/01.jpg" alt="author"></picture>
+    <figure class="card-feedback__body">
+      <blockquote class="card-feedback__review">
+        <p class="card-feedback__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+      </blockquote>
+      <div class="card-feedback__rating rating" data-rating="" data-rating-value="5"></div>
+      <figcaption class="card-feedback__caption">
+        <span class="card-feedback__author">John Doe</span>
+        <span class="card-feedback__pos">Accountant</span>
+      </figcaption>
+    </figure>
+  </article>
+</div><div class="feedback__slide swiper-slide">
+  <article class="feedback__card card-feedback">
+    <h2 class="visually-hidden">author feedback</h2>
+    <picture><source srcset="img/feedback/02.webp" type="image/webp"><img class="card-feedback__image" width="100" height="100" src="img/feedback/02.jpg" alt="author"></picture>
+    <figure class="card-feedback__body">
+      <blockquote class="card-feedback__review">
+        <p class="card-feedback__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+      </blockquote>
+      <div class="card-feedback__rating rating" data-rating="" data-rating-value="4"></div>
+      <figcaption class="card-feedback__caption">
+        <span class="card-feedback__author">John Smith</span>
+        <span class="card-feedback__pos">Journalist, HWO News</span>
+      </figcaption>
+    </figure>
+  </article>
+</div><div class="feedback__slide swiper-slide">
+  <article class="feedback__card card-feedback">
+    <h2 class="visually-hidden">author feedback</h2>
+    <picture><source srcset="img/feedback/03.webp" type="image/webp"><img class="card-feedback__image" width="100" height="100" src="img/feedback/03.jpg" alt="author"></picture>
+    <figure class="card-feedback__body">
+      <blockquote class="card-feedback__review">
+        <p class="card-feedback__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+      </blockquote>
+      <div class="card-feedback__rating rating" data-rating="" data-rating-value="5"></div>
+      <figcaption class="card-feedback__caption">
+        <span class="card-feedback__author">Tamara Bellis</span>
+        <span class="card-feedback__pos">Managing Director, JTH</span>
+      </figcaption>
+    </figure>
+  </article>
+</div><div class="feedback__slide swiper-slide">
+  <article class="feedback__card card-feedback">
+    <h2 class="visually-hidden">author feedback</h2>
+    <picture><source srcset="img/feedback/01.webp" type="image/webp"><img class="card-feedback__image" width="100" height="100" src="img/feedback/01.jpg" alt="author"></picture>
+    <figure class="card-feedback__body">
+      <blockquote class="card-feedback__review">
+        <p class="card-feedback__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+      </blockquote>
+      <div class="card-feedback__rating rating" data-rating="" data-rating-value="5"></div>
+      <figcaption class="card-feedback__caption">
+        <span class="card-feedback__author">John Doe</span>
+        <span class="card-feedback__pos">Accountant</span>
+      </figcaption>
+    </figure>
+  </article>
+</div><div class="feedback__slide swiper-slide">
+  <article class="feedback__card card-feedback">
+    <h2 class="visually-hidden">author feedback</h2>
+    <picture><source srcset="img/feedback/02.webp" type="image/webp"><img class="card-feedback__image" width="100" height="100" src="img/feedback/02.jpg" alt="author"></picture>
+    <figure class="card-feedback__body">
+      <blockquote class="card-feedback__review">
+        <p class="card-feedback__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+      </blockquote>
+      <div class="card-feedback__rating rating" data-rating="" data-rating-value="4"></div>
+      <figcaption class="card-feedback__caption">
+        <span class="card-feedback__author">John Smith</span>
+        <span class="card-feedback__pos">Journalist, HWO News</span>
+      </figcaption>
+    </figure>
+  </article>
+</div><div class="feedback__slide swiper-slide">
+  <article class="feedback__card card-feedback">
+    <h2 class="visually-hidden">author feedback</h2>
+    <picture><source srcset="img/feedback/03.webp" type="image/webp"><img class="card-feedback__image" width="100" height="100" src="img/feedback/03.jpg" alt="author"></picture>
+    <figure class="card-feedback__body">
+      <blockquote class="card-feedback__review">
+        <p class="card-feedback__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+      </blockquote>
+      <div class="card-feedback__rating rating" data-rating="" data-rating-value="5"></div>
+      <figcaption class="card-feedback__caption">
+        <span class="card-feedback__author">Tamara Bellis</span>
+        <span class="card-feedback__pos">Managing Director, JTH</span>
+      </figcaption>
+    </figure>
+  </article>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slider-control slider-control--feed">
+        <button class="slider-control__prev slider-control__prev--feed swiper-button-prev btn">
+          <svg>
+            <use xlink:href="img/icons.svg#arrow-icon"></use>
+          </svg>
+        </button>
+        <button class="slider-control__next slider-control__next--feed swiper-button-next btn">
+          <svg>
+            <use xlink:href="img/icons.svg#arrow-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="newsletter">
+  <div class="container">
+    <div class="newsletter__content" data-watch data-watch-once data-watch-threshold="0.3">
+      <h2 class="newsletter__title">Our Newsletter</h2>
+      <form class="newsletter__form" action="#">
+        <label class="newsletter__label" for="newsletter-form">Email</label>
+        <div class="newsletter__row">
+          <input autocomplete="off" id="newsletter-form" type="email" name="newsletter email" placeholder="Enter your email" class="newsletter__input">
+          <button class="newsletter__button btn" type="submit"><span>Subscribe</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__column">
+        <div class="logo footer__logo">
+          <a class="logo__link" href="#">
+            <img src="img/logo.svg" width="234" height="46" alt="Travellian logo">
+          </a>
+        </div>
+        <div class="footer__copy">Copyright © Travellian 2020 All rights reserved</div>
+      </div>
+      <div class="footer__column">
+        <span class="footer__title">Menu</span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Home</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Explore</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Travel</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__title">Information</span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Destinations</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Supports</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__title">Contact Info</span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link link" href="tel:123456789">+123 456 789</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="mailto:info@travellian.com">info@travellian.com</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">1245, New Yourk, USA</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__title">Follow us on</span>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg>
+                  <use xlink:href="img/icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg>
+                  <use xlink:href="img/icons.svg#pinterest-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg>
+                  <use xlink:href="img/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg>
+                  <use xlink:href="img/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
 </body>
 
 </html>

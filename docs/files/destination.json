@@ -1,0 +1,68 @@
+[
+  {
+    "id": "BerlinDest",
+    "img": "img/destinations/01.jpg",
+    "img2x": "img/destinations/01_2x.jpg",
+    "alt": "Monument of Berlin",
+    "title": "Monument of Berlin",
+    "location" : "Berlin, Germany",
+    "url" : "#"
+  },
+  {
+    "id": "LondonDest",
+    "img": "img/destinations/02.jpg",
+    "img2x": "img/destinations/02_2x.jpg",
+    "title": "Millennium Bridge",
+    "location" : "London, United Kingdom",
+    "url" : "#"
+  },
+  {
+    "id": "VeniceDest",
+    "img": "img/destinations/03.jpg",
+    "img2x": "img/destinations/03_2x.jpg",
+    "title": "Rialto Bridge",
+    "location" : "Venice, Italy",
+    "url" : "#"
+  },
+  {
+    "id": "LisbonDest",
+    "img": "img/destinations/04.jpg",
+    "img2x": "img/destinations/04_2x.jpg",
+    "title": "Sea of Orange Tiles",
+    "location" : "Lisbon, Portugal",
+    "url" : "#"
+  },
+  {
+    "id": "BerlinDest1",
+    "img": "img/destinations/01.jpg",
+    "img2x": "img/destinations/01_2x.jpg",
+    "alt": "Monument of Berlin",
+    "title": "Monument of Berlin",
+    "location" : "Berlin, Germany",
+    "url" : "#"
+  },
+  {
+    "id": "LondonDest1",
+    "img": "img/destinations/02.jpg",
+    "img2x": "img/destinations/02_2x.jpg",
+    "title": "Millennium Bridge",
+    "location" : "London, United Kingdom",
+    "url" : "#"
+  },
+  {
+    "id": "VeniceDest1",
+    "img": "img/destinations/03.jpg",
+    "img2x": "img/destinations/03_2x.jpg",
+    "title": "Rialto Bridge",
+    "location" : "Venice, Italy",
+    "url" : "#"
+  },
+  {
+    "id": "LisbonDest1",
+    "img": "img/destinations/04.jpg",
+    "img2x": "img/destinations/04_2x.jpg",
+    "title": "Sea of Orange Tiles",
+    "location" : "Lisbon, Portugal",
+    "url" : "#"
+  }
+]

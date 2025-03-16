@@ -14,23 +14,12 @@
       }
     }
   }
-  // .destinations__header
-  &__header {
-
-  }
-  // .destinations__body
-  &__body {
-  }
   // .destinations__slider
   &__slider {
     // overflow: visible;
     @media (max-width: $desktop3){
       margin-bottom: 100px;
     }
-  }
-  // .destinations__wrapper
-  &__wrapper {
-
   }
 
   &__slide {
@@ -53,10 +42,4 @@
 		}
   }
 }
-
-
-// .swiper-button-disabled {
-//   opacity: 0.5;
-//   pointer-events: none;
-// }
 

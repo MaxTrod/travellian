@@ -1,54 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/components/_head.html', {
-"title" : "travellian project"
+"title" : "page main"
 })
 
 <body>
-  <div class="preview">
-    <div class="preview__title">
-       "travellian" landing layout by <a href="#">MaxTrod</a>
-    </div>
-    <div class="preview__description">
-      Your pages:
-   </div>
-    <ol class="preview__list">
-      <li class="preview__item">
-        <a class="preview__link" href="page-main.html" target="_blank">main page</a>
-      </li>
-    </ol>
-  </div>
+  <div class="wrapper">
+    @@include('html/components/_header.html', {})
 
-  <style>
-    .preview {
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      text-align: center;
-      font-size: 30px;
-      padding: 20px;
-      background-color: #2e333d;
-      min-height: 100vh;
-      color: #fff;
-    }
-    .preview ol {
-      list-style: upper-roman;
-    }
-    .preview__title {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    .preview__description {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-    .preview__list {
-      font-size: 25px;
-    }
-    .preview__title a {
-      text-decoration: underline;
-      color: #b2dab5;
-      transition: all 0.1s;
-    }
-  </style>
+    <main class="page">
+      @@include('html/page-main/_hero.html', {})
+      @@include('html/page-main/destinations-section/_destinations.html', {})
+      @@include('html/page-main/offer-section/_offer.html', {})
+      @@include('html/page-main/_blog.html', {})
+      @@include('html/page-main/trip-section/_trip.html', {})
+      @@include('html/page-main/_gallery.html', {})
+      @@include('html/page-main/feedback-section/_feedback.html', {})
+      @@include('html/page-main/_newsletter.html', {})
+    </main>
+
+    @@include('html/components/_footer.html', {})
+  </div>
 </body>
 
 </html>

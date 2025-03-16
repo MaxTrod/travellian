@@ -1,14 +1,11 @@
 @import 'base/reset';
 @import 'base/fonts';
 @import 'base/vars';
-// @import 'base/root';
 @import 'base/extend';
 @import 'base/global';
 @import 'base/common';
-// @import 'base/mixins';
 @import 'base/grid';
 @import 'libs/swiper';
-// @import 'base/_selects';
 @import 'base/_datepicker';
 @import 'components/_icon-menu';
 /*header*/
@@ -18,26 +15,18 @@
 /*Главная страница*/
 @import 'page-main/hero';
 @import "../../node_modules/choices.js/src/styles/choices";
-
 @import 'page-main/destinations-section/destinations';
 @import 'page-main/destinations-section/destinations-slide';
-
 @import 'page-main/offer-section/offer';
 @import 'page-main/offer-section/offer-slide';
 @import 'base/rating';
-
 @import 'page-main/blog';
-
 @import 'page-main/trip-section/trip';
 @import 'page-main/trip-section/trip-slide';
-
 @import 'page-main/gallery';
 @import '../../node_modules/photoswipe/dist/photoswipe';
-
-
 @import 'page-main/feedback-section/feedback';
 @import 'page-main/feedback-section/feedback-slide';
-
 @import 'page-main/newsletter';
 
 /*footer*/

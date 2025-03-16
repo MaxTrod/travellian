@@ -1,6 +1,4 @@
 .offer {
-  // .offer__inner
-  &__inner {}
   // .offer__header
   &__header {
     .block-heading__text {
@@ -14,9 +12,6 @@
     @media (max-width: $mobile) {
       margin-bottom: 60px;
     }
-  }
-  // .offer__body
-  &__body {
   }
 
   &__slider {
@@ -47,32 +42,4 @@
 			}
 		}
   }
-}
-.section {
-}
-.container {
-}
-.block-heading {
-  // .block-heading__title
-  &__title {}
-  // .block-heading__text
-  &__text {}
-}
-.slider-control {
-  // .slider-control__prev
-  &__prev {}
-  // .slider-control__prev--offer
-  &__prev--offer {}
-  // .slider-control__next
-  &__next {}
-  // .slider-control__next--offer
-  &__next--offer {}
-}
-.slider-control--offer {
-}
-.swiper-button-prev {
-}
-.btn {
-}
-.swiper-button-next {
 }

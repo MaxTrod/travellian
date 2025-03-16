@@ -106,3 +106,25 @@ setTimeout(() => {
 		});
 	}
 }, 0);
+
+
+
+//кнопка home---------------------------------------------
+// const homeButton = document.querySelector('.home-lin');
+// const menu = document.querySelector('.menu');
+// const bodyEl = document.body;
+// const headerEl = document.querySelector('.header');
+// const burgerMenu = document.querySelector('.icon-menu');
+
+// homeButton.addEventListener('click', (e) => {
+//    e.preventDefault();
+//    menu.classList.remove('menu--open');
+//    bodyEl.classList.remove('body-lock');
+//    burgerMenu.classList.remove('icon-menu--open');
+// 	 headerEl.classList.remove('_watcher-view');
+//    window.scrollTo({
+//       top: 0,
+//       left: 0,
+//       behavior: "smooth",
+//    });
+// })
